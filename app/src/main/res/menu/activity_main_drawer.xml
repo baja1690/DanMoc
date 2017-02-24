@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_all_items"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="ALl Items" />
+        <item
+            android:id="@+id/nav_saved_list"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Saved List" />
+        <item
+            android:id="@+id/nav_whist_list"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Whist List" />
+        <item
+            android:id="@+id/nav_setting"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Setting" />
+    </group>
+
+</menu>

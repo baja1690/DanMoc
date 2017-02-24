@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1079342719674",
+    "firebase_url": "https://diyapp-a1083.firebaseio.com",
+    "project_id": "diyapp-a1083",
+    "storage_bucket": "diyapp-a1083.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1079342719674:android:6015018bddcbedcb",
+        "android_client_info": {
+          "package_name": "com.app.diy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1079342719674-dhl8ui8bdohuh4faok52a7abt78re6l7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCyTRq1MZhr1pjJiPqMZwueQU2yP_S07FI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

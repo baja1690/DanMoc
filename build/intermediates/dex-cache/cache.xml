@@ -1,0 +1,581 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/Users/admin/Documents/App/DIY/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-vision/9.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="f4e85eafa876cd7d7641244867dac3f88d71e866">
+        <dex dex="/Users/admin/Documents/App/DIY/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-vision-9.0.0_a6131a7cc9d2c42e796e01b784ca4c5aee2a0020.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/admin/Documents/App/DIY/app/build/intermediates/exploded-aar/com.google.firebase/firebase-auth-common/9.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="5f0f6913a208a126269aaa68004ed0329a832c5b">
+        <dex dex="/Users/admin/Documents/App/DIY/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-auth-common-9.0.0_e1f8b72f2193997a1bbc3d93ccef0476134406c1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/admin/Documents/App/DIY/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics-impl/9.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="0dc8ab07eeceda5e99b305c8069765056b6e5c9d">
+        <dex dex="/Users/admin/Documents/App/DIY/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-analytics-impl-9.0.0_43f034e29945b50981820f112b9198686fc144c1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/admin/Documents/App/DIY/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appinvite/9.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="d96f9f3ef66494d1231304cafd28c962dda80dea">
+        <dex dex="/Users/admin/Documents/App/DIY/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-appinvite-9.0.0_1fe53386e37b6a69523c61748b5d2a7f4e89d88e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/admin/Documents/App/DIY/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="33bbc5adb379967c20584219a3a6b6182407b444">
+        <dex dex="/Users/admin/Documents/App/DIY/app/build/intermediates/pre-dexed/debug/instant-run-bootstrap_8909f2653ae2e0a0841a87f70982b86991f92456.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/admin/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/24.2.1/support-annotations-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="8de3aafecbdf98a61db6427f008f2d515bcd2544">
+        <dex dex="/Users/admin/Documents/App/DIY/app/build/intermediates/pre-dexed/debug/support-annotations-24.2.1_c733e8857a83d392ace023bf1ef3bdeed79fd404.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/admin/Documents/App/DIY/app/build/intermediates/exploded-aar/com.android.support/design/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="e03f47f3d1017a093bb3239d4ec47c3447f40744">
+        <dex dex="/Users/admin/Documents/App/DIY/app/build/intermediates/pre-dexed/debug/com.android.support-design-24.2.1_5c4b69c55b15b216acaba72491d69e1890168f12.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/admin/Documents/App/DIY/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="8d60f876de84fbaa550257c75610bbadd2d34081">
+        <dex dex="/Users/admin/Documents/App/DIY/app/build/intermediates/pre-dexed/debug/instant-run_f49ef62edf6d3424504e78c3b91d7bd4afcd4a8a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/admin/Documents/App/DIY/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/9.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="4ef8ab5fee042023018249474bc93bd4b2b9c17e">
+        <dex dex="/Users/admin/Documents/App/DIY/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-analytics-9.0.0_ba77b71387e3ce2b92612838d6d3523e8bffa723.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/admin/Documents/App/DIY/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-drive/9.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="294d49a66cc1238d9f7fd352136a45622fa98c0f">
+        <dex dex="/Users/admin/Documents/App/DIY/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-drive-9.0.0_dcde172ee74ab2f20be0d2aa89aabc37388cfe74.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/admin/Documents/App/DIY/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="94bc1dfb84dcc8b6f6f8f7cc726d7b2dd39c1574">
+        <dex dex="/Users/admin/Documents/App/DIY/app/build/intermediates/pre-dexed/debug/com.android.support-animated-vector-drawable-24.2.1_ff5af9aa151f76e1bb491c541b75d5811e710e5f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/admin/Documents/App/DIY/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tagmanager/9.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="8126914f5bc372a33e27ea90f02412c32468ce8a">
+        <dex dex="/Users/admin/Documents/App/DIY/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-tagmanager-9.0.0_26f01ceca7ad87bfff5861526b2b038ec4c72deb.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/admin/Documents/App/DIY/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-auth-base/9.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="7a23185c9b1c100e7d1a32275017e4712e31c796">
+        <dex dex="/Users/admin/Documents/App/DIY/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-auth-base-9.0.0_5d77ddbe9d5501132a1e174e77ccc9ea79bb00e2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/admin/Documents/App/DIY/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/9.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="d7002ed92a3c46c6a89a786877ecf7978a4f0459">
+        <dex dex="/Users/admin/Documents/App/DIY/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-wallet-9.0.0_ef456091c4a1bd307c75a7c0a41ae78698bc58e9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/admin/Documents/App/DIY/app/build/intermediates/exploded-aar/com.google.firebase/firebase-crash/9.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="7e467a973b749c6390a5991c9a8edbde96fc10c9">
+        <dex dex="/Users/admin/Documents/App/DIY/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-crash-9.0.0_4958f63b383a4dcf7a027d53f960c66328f33721.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/admin/Documents/App/DIY/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/9.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="59cca9b91688dc2467754d36793b3d23bebd21a9">
+        <dex dex="/Users/admin/Documents/App/DIY/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-location-9.0.0_f2b9198376e658e617791f35d51d2c6fb4b22138.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/admin/Documents/App/DIY/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tagmanager-api/9.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="69472e334350cafbf442776da05c9a04955252fb">
+        <dex dex="/Users/admin/Documents/App/DIY/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-tagmanager-api-9.0.0_118d7d426ac161bcf1acf1664fbebba63d05e5c0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/admin/Documents/App/DIY/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="0ecb4b595fa0f0f8018a149ace3ea6525624f94e">
+        <dex dex="/Users/admin/Documents/App/DIY/app/build/intermediates/pre-dexed/debug/com.android.support-support-compat-24.2.1_1cb0d03f258934dad774a9a71ce897a503969b80.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/admin/Documents/App/DIY/app/build/intermediates/exploded-aar/com.google.firebase/firebase-messaging/9.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="005786793d72c6deacbbbfd38177ed58e1aa6653">
+        <dex dex="/Users/admin/Documents/App/DIY/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-messaging-9.0.0_34040bec948a5bbe4cfd3af46ebd5f0b1762f6cd.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/admin/Documents/App/DIY/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="ea4b54dcbfe5ac05efb0a314105f07258118d3a7">
+        <dex dex="/Users/admin/Documents/App/DIY/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-iid-9.0.0_7ed50dff3dbe32463cfb7233a5450328d9bc8886.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/admin/Documents/App/DIY/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wearable/9.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="184428c29b2a4b220cd44284d515db5d8cb5fc76">
+        <dex dex="/Users/admin/Documents/App/DIY/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-wearable-9.0.0_8c080e005d08450cbcffd326e50a15e2a6e908ee.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/admin/Documents/App/DIY/app/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="5f64d657e838e8375135c0f6057a7ff8fab6a50e">
+        <dex dex="/Users/admin/Documents/App/DIY/app/build/intermediates/pre-dexed/debug/internal_impl-24.2.1_3a3a4c2430913bd2e4b9acca9b1a6bc4d239f17b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/admin/Documents/App/DIY/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="6f65c144283b31b4b9a70e6e7aa4c4a1c897d4b8">
+        <dex dex="/Users/admin/Documents/App/DIY/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-base-9.0.0_77a97ab4d9fc18c8ac667951050f438d85f9e93c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/admin/Documents/App/DIY/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="09b462bbcb77650284bd6614f1a32f360ef369f8">
+        <dex dex="/Users/admin/Documents/App/DIY/app/build/intermediates/pre-dexed/debug/com.android.support-support-media-compat-24.2.1_aa9606ea85756425d07e9988d6e6f25974e14937.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/admin/Documents/App/DIY/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-gcm/9.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="4caf75b2cfb7ec6e80a57d0ee64fc102ad3578b8">
+        <dex dex="/Users/admin/Documents/App/DIY/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-gcm-9.0.0_edf2bec77cc1000b43cc03a3c2fe32879d441eae.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/admin/Documents/App/DIY/app/build/intermediates/exploded-aar/com.google.firebase/firebase-storage-common/9.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="ed16ff19f0a9515604a0f08104ca0317b82e29e3">
+        <dex dex="/Users/admin/Documents/App/DIY/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-storage-common-9.0.0_e2ab8a2c2389eea3406876caff9662062dad6b2d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/admin/Documents/App/DIY/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads-lite/9.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="79e4b41db41d4dbbf364c7bd6aaeee5b876c9d8b">
+        <dex dex="/Users/admin/Documents/App/DIY/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-ads-lite-9.0.0_d499bcef55127b90d5d87933e8bd2b0c7a43c786.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/admin/Documents/App/DIY/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/jars/libs/internal_impl-23.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="03d38bb042efe3e5ce27ba66b729a9523c36d8fe">
+        <dex dex="/Users/admin/Documents/App/DIY/app/build/intermediates/pre-dexed/debug/internal_impl-23.0.0_ee012efa7fe5c6be912591d91001e4409018c000.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/admin/Documents/App/DIY/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-plus/9.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="817b9101192f2fd6dc0fd8cd522d8f4a1a75fcdc">
+        <dex dex="/Users/admin/Documents/App/DIY/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-plus-9.0.0_0e176a7214b3ca4cd5aa24397fe0058da11bd071.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/admin/Documents/App/DIY/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="d358b3dd49a7c67844622dcbc9cf4339e13952ce">
+        <dex dex="/Users/admin/Documents/App/DIY/app/build/intermediates/pre-dexed/debug/com.android.support-mediarouter-v7-23.0.0_6672992e6d27949e4a30ee18be3c13cf9d0f8d36.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/admin/Documents/App/DIY/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics-impl/9.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="373cd65725af2781d100ddc193c7d3f14464a774">
+        <dex dex="/Users/admin/Documents/App/DIY/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-analytics-impl-9.0.0_ce13053889988e1e8a8c2917cbcd6af288780c2c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/admin/Documents/App/DIY/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-iid/9.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="379d1834afa3c08f43be23a23b103053537b65b5">
+        <dex dex="/Users/admin/Documents/App/DIY/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-iid-9.0.0_66d85dc50789c2a404c430e6e5286e7c57c6d54e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/admin/Documents/App/DIY/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-auth/9.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="7da84426d876216ed4cdddd85e739be5ecabdd04">
+        <dex dex="/Users/admin/Documents/App/DIY/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-auth-9.0.0_fb39b26947a4a1cc833488d2a48e8da9e0a53008.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/admin/Documents/App/DIY/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="fbf8da429efd5ad21e02e3e5ecaa1efc4167878d">
+        <dex dex="/Users/admin/Documents/App/DIY/app/build/intermediates/pre-dexed/debug/internal_impl-24.2.1_a73ada5d62f4a99ec19c58c5ff961e2d5fbe08a9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/admin/Documents/App/DIY/app/build/intermediates/exploded-aar/com.google.firebase/firebase-auth-module/9.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="24536a7b97926a9c155c88425da6875adeb11b51">
+        <dex dex="/Users/admin/Documents/App/DIY/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-auth-module-9.0.0_7370ac855d4b882e50d6ce1d256ea2d6a0ab6600.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/admin/Documents/App/DIY/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="7521486d9bfd2cd9e756e0cf75ed7d97f2ce2d3b">
+        <dex dex="/Users/admin/Documents/App/DIY/app/build/intermediates/pre-dexed/debug/com.android.support-recyclerview-v7-24.2.1_eb9adaa864a3c09ca2549ced1cdad82f09fd8139.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/admin/Documents/App/DIY/app/build/intermediates/exploded-aar/com.google.firebase/firebase-storage/9.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="733964f04c339e425439545b1d172c23b53f8c13">
+        <dex dex="/Users/admin/Documents/App/DIY/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-storage-9.0.0_eb358b247ca8f5e03a8310d0995d2278d01b3d73.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/admin/Documents/App/DIY/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-safetynet/9.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="c11cf7a7a6e5adf8fa564303a11dbc351fc11b7c">
+        <dex dex="/Users/admin/Documents/App/DIY/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-safetynet-9.0.0_819437f5ac4b5dac307e0d9dcb955c96061aa4d8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/admin/Documents/App/DIY/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-panorama/9.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="67a7d712de3e7d025f4efdcec1da183f764bdbab">
+        <dex dex="/Users/admin/Documents/App/DIY/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-panorama-9.0.0_a95b3586246770ab97b9f9940782837a6681507d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/admin/Documents/App/DIY/app/build/intermediates/exploded-aar/com.google.firebase/firebase-database/9.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="32a5a566ae197603d0bed3e6d1d275f6a771564e">
+        <dex dex="/Users/admin/Documents/App/DIY/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-database-9.0.0_bec7e4427205e581acd9ee6988c812e77feeb66b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/admin/Documents/App/DIY/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="867dad63c33388ff8c7644b236579355036d075f">
+        <dex dex="/Users/admin/Documents/App/DIY/app/build/intermediates/pre-dexed/debug/internal_impl-24.2.1_e123299c3f4d0680c3b75a0cd33c4be63b913a84.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/admin/Documents/App/DIY/app/build/intermediates/exploded-aar/com.google.firebase/firebase-config/9.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="ebfde1a055aea400df77584a68aa60609f618bed">
+        <dex dex="/Users/admin/Documents/App/DIY/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-config-9.0.0_4b2b166696ca00365e71576b08bf90245a296482.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/admin/Documents/App/DIY/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="43b2dba6b5a0b14527961b75329d0b90025f15ea">
+        <dex dex="/Users/admin/Documents/App/DIY/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-24.2.1_aabef98a259d9364073837af435831052b3b9d16.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/admin/Documents/App/DIY/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-nearby/9.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="0facc6fc326f2406f4bb9b02f442994c5ce6a403">
+        <dex dex="/Users/admin/Documents/App/DIY/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-nearby-9.0.0_fa17b548d23fd7258456ddc9136b52a09763b058.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/admin/Documents/App/DIY/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/9.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="2cb29455028e92e024bbad0d41c6ec772f2433d1">
+        <dex dex="/Users/admin/Documents/App/DIY/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-ads-9.0.0_bb93693aec2333d98c2b56080ce65297dbfee28c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/admin/Documents/App/DIY/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="cc178928721f3222b3b06bdfbd9497378ccb9792">
+        <dex dex="/Users/admin/Documents/App/DIY/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-basement-9.0.0_132bffd9306145ce489fa5ced8f9ff33fd31d024.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/admin/Documents/App/DIY/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/9.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="a819aae4f0c711e50b4fd633922a3c1a176cb51e">
+        <dex dex="/Users/admin/Documents/App/DIY/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-maps-9.0.0_98770e7bdaf11253486a539ec59b9fbf9ed284ad.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/admin/Documents/App/DIY/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-identity/9.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="5289e799a43a64c4137d109bf992e10a2f952aa3">
+        <dex dex="/Users/admin/Documents/App/DIY/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-identity-9.0.0_f3cc3e21d4c6495d9014b270106936d7bf139c72.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/admin/Documents/App/DIY/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="9c4c3bc902450c39ed54de170db4fb12aea20a35">
+        <dex dex="/Users/admin/Documents/App/DIY/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-utils-24.2.1_aaef8a10c5919a630f1e4f471ca79a1b29d64daa.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/admin/Documents/App/DIY/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-games/9.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="2c5bc0ebbe69c9fab587c2216b36ec44ab8f0704">
+        <dex dex="/Users/admin/Documents/App/DIY/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-games-9.0.0_0d538cf3d6af951816317747e2058f66144e026b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/admin/Documents/App/DIY/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/9.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="1941832901fc4e7a93300b53762e9f65d7650b99">
+        <dex dex="/Users/admin/Documents/App/DIY/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-tasks-9.0.0_a8105cd3c9e402a5f023433d15f856b699eba5ea.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/admin/Documents/App/DIY/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="7e4389bd133359a2ff88623ff1e4ff93d6e6f780">
+        <dex dex="/Users/admin/Documents/App/DIY/app/build/intermediates/pre-dexed/debug/internal_impl-24.2.1_5472a4d215a53e3de91f3453607f037c9b354593.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/admin/Documents/App/DIY/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-fitness/9.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="2f7bd8cc7519d5231aa8d2ae8e905d3f602bd491">
+        <dex dex="/Users/admin/Documents/App/DIY/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-fitness-9.0.0_cd45a9b97759e032c7c9edfbef6d01c5002f5cec.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/admin/Documents/App/DIY/app/build/intermediates/exploded-aar/com.google.firebase/firebase-auth/9.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="70ddab48594608953b20164b82f1f890a9a8174a">
+        <dex dex="/Users/admin/Documents/App/DIY/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-auth-9.0.0_dbba6f7ee711449f1737c13973a83d13312b41d0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/admin/Documents/App/DIY/app/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="b9a1ac78ad7ef3abedc4a4b30cd92bcacb939d1f">
+        <dex dex="/Users/admin/Documents/App/DIY/app/build/intermediates/pre-dexed/debug/com.android.support-support-fragment-24.2.1_35a097bfd4f2257fd33e270dd5e0188bb3fd0412.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/admin/Documents/App/DIY/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/Users/admin/Documents/App/DIY/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-24.2.1_fcf18ec2012f073104da6453bb64da84600593b2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/admin/Documents/App/DIY/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="935a969265b2a166b2d20415423f5f6e90fe16e0">
+        <dex dex="/Users/admin/Documents/App/DIY/app/build/intermediates/pre-dexed/debug/internal_impl-24.2.1_a0ba66b2cbfa8a74c2f31eb33b48178e354d4662.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/admin/Documents/App/DIY/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast/9.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="e595f98f8c525201dccd119f43ad1ddacd4c48d6">
+        <dex dex="/Users/admin/Documents/App/DIY/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-cast-9.0.0_1c17dd56b62f46e5a946f32de7622f7a5e6193f8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/admin/Documents/App/DIY/app/build/intermediates/exploded-aar/com.google.firebase/firebase-database-connection/9.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="ef5c5c2afbd174d55cf1cfcac7d0346cbc4c1322">
+        <dex dex="/Users/admin/Documents/App/DIY/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-database-connection-9.0.0_048632f499d7c99f57a83546967bb6bd66f56b1a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/admin/Documents/App/DIY/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appindexing/9.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="4431efe5d0f67fab36a698dde725946b33a6bf4a">
+        <dex dex="/Users/admin/Documents/App/DIY/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-appindexing-9.0.0_82d1e03abb31aae40e7260e09a75eab5dda23823.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/admin/Documents/App/DIY/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics/9.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="b8bedab61b3b5238cd9a07d3b04449d7fecdbc3b">
+        <dex dex="/Users/admin/Documents/App/DIY/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-analytics-9.0.0_7a29fbbf792e9e4637144a934808948d3e0774c6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/admin/Documents/App/DIY/app/build/intermediates/exploded-aar/com.google.firebase/firebase-common/9.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="42df48c7305b08b14fa0e84561091b0c24d70d26">
+        <dex dex="/Users/admin/Documents/App/DIY/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-common-9.0.0_c971621faf8e9f2e9c941943ca05572ddd91c02e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/admin/Documents/App/DIY/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="d5c731fc64c03dfe04d51134955b483551c35849">
+        <dex dex="/Users/admin/Documents/App/DIY/app/build/intermediates/pre-dexed/debug/com.android.support-support-vector-drawable-24.2.1_8008a620a9554063ab0d1ed7fdf8df32788db9dd.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/admin/Documents/App/DIY/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="e7f3132168957eefc46229fc32c3bd464642b71e">
+        <dex dex="/Users/admin/Documents/App/DIY/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-ui-24.2.1_5dc53b76c4af939c1cf8b6491724b0947bb7254a.jar" />
+    </item>
+
+</items>
