@@ -3,21 +3,25 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_all_items"
+            android:id="@+id/nav_learning"
             android:icon="@drawable/ic_menu_camera"
-            android:title="ALl Items" />
+            android:title="@string/menu_learning" />
+        <item
+            android:id="@+id/nav_knitting_charts"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/menu_knitting_charts" />
+        <item
+            android:id="@+id/nav_crochet_charts"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="@string/menu_crochet_charts" />
         <item
             android:id="@+id/nav_saved_list"
             android:icon="@drawable/ic_menu_gallery"
-            android:title="Saved List" />
-        <item
-            android:id="@+id/nav_whist_list"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="Whist List" />
+            android:title="@string/menu_saved_items" />
         <item
             android:id="@+id/nav_setting"
             android:icon="@drawable/ic_menu_manage"
-            android:title="Setting" />
+            android:title="@string/menu_settings" />
     </group>
 
 </menu>

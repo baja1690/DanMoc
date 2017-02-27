@@ -14,11 +14,19 @@ import com.app.diy.manager.SharedPreference;
 public class BaseActivity extends AppCompatActivity {
     private SharedPreference mSharedPreference;
     private Context mContext;
+    private String mLanguage;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         mSharedPreference = SharedPreference.getInstance(this);
         mContext = this;
+    }
+    public void setLanguage(){
+
+    }
+    public String getLanguage(){
+
+        return mLanguage;
     }
 }

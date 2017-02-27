@@ -1,2 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="menu_learning">Học cách đan móc</string>
+    <string name="menu_knitting_charts">Chart móc</string>
+    <string name="menu_crochet_charts">Chart đan</string>
+    <string name="menu_saved_items">Danh Sách đã lưu</string>
+    <string name="menu_settings">Cài đặt</string>
+
+    <!--Cach lam-->
+
+    <string name="screen_how_to_do">Hoc Dan Moc</string>
+</resources>

@@ -1,13 +1,13 @@
 package com.app.diy.activities;
 
-import android.app.Fragment;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
 import android.support.design.widget.Snackbar;
-import android.support.v4.app.FragmentManager;
+import android.support.v4.app.Fragment;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
@@ -17,30 +17,39 @@ import android.view.MenuItem;
 import android.view.View;
 
 import com.app.diy.R;
-import com.app.diy.fragments.HomeFragment;
-import com.app.diy.fragments.SavedItemsFragment;
+import com.app.diy.fragments.CrochetChartsFragment;
+import com.app.diy.fragments.HowToDoFragment;
+import com.app.diy.fragments.KnittingChartsFragment;
+import com.app.diy.fragments.SavedListFragment;
 import com.app.diy.fragments.SettingFragment;
-import com.app.diy.fragments.WhishListFragment;
 import com.app.diy.network.FireBaseDb;
+import com.app.diy.utils.ActivityUtils;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
-import static com.app.diy.R.id.nav_whist_list;
+import butterknife.BindView;
+import butterknife.ButterKnife;
+
+import static com.app.diy.R.id.nav_knitting_charts;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
     private static final String TAG = MainActivity.class.getSimpleName();
     private FireBaseDb mFireBaseDb;
+    private ActionBar mActionBar;
+    @BindView(R.id.toolbar)
+    Toolbar mToolbar;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
+        ButterKnife.bind(this);
+        setSupportActionBar(mToolbar);
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
@@ -53,13 +62,12 @@ public class MainActivity extends AppCompatActivity
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
-                this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
+                this, drawer, mToolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.setDrawerListener(toggle);
         toggle.syncState();
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
-
 
         mFireBaseDb = FireBaseDb.getInstance();
        // mFireBaseDb.writeNewItem("abc","amigur","https://google.com");
@@ -127,21 +135,26 @@ public class MainActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         Fragment fragment = null;
         Class fragmentClass;
+        String title="";
         switch (item.getItemId()){
-            case R.id.nav_all_items:
-                fragmentClass = HomeFragment.class;
+            case R.id.nav_learning:
+                fragmentClass = HowToDoFragment.class;
+                title = getResources().getString(R.string.screen_how_to_do);
+                break;
+            case nav_knitting_charts:
+                fragmentClass = KnittingChartsFragment.class;
+                break;
+            case R.id.nav_crochet_charts:
+                fragmentClass = CrochetChartsFragment.class;
                 break;
             case R.id.nav_saved_list:
-                fragmentClass = SavedItemsFragment.class;
-                break;
-            case nav_whist_list:
-                fragmentClass = WhishListFragment.class;
+                fragmentClass = SavedListFragment.class;
                 break;
             case R.id.nav_setting:
                 fragmentClass = SettingFragment.class;
                 break;
             default:
-                fragmentClass = HomeFragment.class;
+                fragmentClass = HowToDoFragment.class;
                 break;
         }
         try {
@@ -151,17 +164,14 @@ public class MainActivity extends AppCompatActivity
         } catch (IllegalAccessException e) {
             e.printStackTrace();
         }
-        FragmentManager fragmentManager = getSupportFragmentManager();
+        mToolbar.setTitle(title);
+        //getSupportFragmentManager().findFragmentById(R.id.flContent);
+        if(fragment!=null){
+            ActivityUtils.addFragmentToActivity(getSupportFragmentManager(), fragment,R.id.flContent);
+        }
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
-
         return true;
     }
+
 }
-/*
-
-
-Error:Execution failed for task ':app:transformClassesWithDexForDebug'.
-> com.android.build.api.transform.TransformException: com.android.ide.common.process.ProcessException: java.util.concurrent.ExecutionException: com.android.dex.DexException: Multiple dex files define Lcom/google/android/gms/common/api/zza;
-
- */

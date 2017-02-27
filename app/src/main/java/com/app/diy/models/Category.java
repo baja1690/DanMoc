@@ -1,5 +1,7 @@
 package com.app.diy.models;
 
+import java.util.List;
+
 /**
  * Created by Cuong Pham on 2/21/17.
  */
@@ -7,9 +9,9 @@ package com.app.diy.models;
 public class Category {
     private int id;
     private String name;
-    private DiyItem items;
+    private List<DiyItem> items;
 
-    public Category(String name, DiyItem items) {
+    public Category(String name, List<DiyItem> items) {
         this.name = name;
         this.items = items;
     }
@@ -18,23 +20,11 @@ public class Category {
         return id;
     }
 
-    public void setId(int id) {
-        this.id = id;
-    }
-
     public String getName() {
         return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public DiyItem getItems() {
+    public List<DiyItem> getItems() {
         return items;
-    }
-
-    public void setItems(DiyItem items) {
-        this.items = items;
     }
 }
