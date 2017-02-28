@@ -7,4 +7,13 @@ import com.app.diy.base.BaseFragment;
  */
 
 public class SettingFragment extends BaseFragment {
+    @Override
+    protected void initView() {
+
+    }
+
+    @Override
+    protected void initData() {
+
+    }
 }

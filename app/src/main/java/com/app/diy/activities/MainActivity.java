@@ -9,7 +9,6 @@ import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarDrawerToggle;
-import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.Menu;
@@ -17,11 +16,12 @@ import android.view.MenuItem;
 import android.view.View;
 
 import com.app.diy.R;
+import com.app.diy.base.BaseActivity;
 import com.app.diy.fragments.CrochetChartsFragment;
-import com.app.diy.fragments.HowToDoFragment;
 import com.app.diy.fragments.KnittingChartsFragment;
 import com.app.diy.fragments.SavedListFragment;
 import com.app.diy.fragments.SettingFragment;
+import com.app.diy.fragments.TutorialFragment;
 import com.app.diy.network.FireBaseDb;
 import com.app.diy.utils.ActivityUtils;
 import com.google.firebase.database.DataSnapshot;
@@ -35,7 +35,7 @@ import butterknife.ButterKnife;
 
 import static com.app.diy.R.id.nav_knitting_charts;
 
-public class MainActivity extends AppCompatActivity
+public class MainActivity extends BaseActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
     private static final String TAG = MainActivity.class.getSimpleName();
@@ -50,7 +50,6 @@ public class MainActivity extends AppCompatActivity
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
         setSupportActionBar(mToolbar);
-
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -138,7 +137,7 @@ public class MainActivity extends AppCompatActivity
         String title="";
         switch (item.getItemId()){
             case R.id.nav_learning:
-                fragmentClass = HowToDoFragment.class;
+                fragmentClass = TutorialFragment.class;
                 title = getResources().getString(R.string.screen_how_to_do);
                 break;
             case nav_knitting_charts:
@@ -154,7 +153,7 @@ public class MainActivity extends AppCompatActivity
                 fragmentClass = SettingFragment.class;
                 break;
             default:
-                fragmentClass = HowToDoFragment.class;
+                fragmentClass = TutorialFragment.class;
                 break;
         }
         try {
