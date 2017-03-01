@@ -25,4 +25,8 @@ public abstract class BaseFragment extends Fragment {
         mDatabase = FirebaseDatabase.getInstance().getReference();
         initData();
     }
+
+    public String getLanguage(){
+        return ((BaseActivity)mContext).getLanguage();
+    }
 }

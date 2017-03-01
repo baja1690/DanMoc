@@ -73,10 +73,10 @@ public class MainActivity extends BaseActivity
         mFireBaseDb.updateItems();
         //testFireBase();
     }
+
     public void testFireBase(){
         FirebaseDatabase database = FirebaseDatabase.getInstance();
         DatabaseReference myRef = database.getReference("message");
-
         myRef.setValue("Hi!");
         // Read from the database
         myRef.addValueEventListener(new ValueEventListener() {

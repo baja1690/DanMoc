@@ -34,7 +34,9 @@ public class BaseActivity extends AppCompatActivity {
         }
     }
     public String getLanguage(){
-
+        if(TextUtils.isEmpty(mLanguage)){
+          mLanguage = "vi";
+        }
         return mLanguage;
     }
 }

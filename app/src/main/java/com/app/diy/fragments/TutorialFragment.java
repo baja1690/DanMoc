@@ -10,12 +10,14 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.app.diy.R;
-import com.app.diy.activities.MainActivity;
 import com.app.diy.base.BaseFragment;
 import com.app.diy.models.Tutorial;
 import com.app.diy.views.adapters.TutorialAdapter;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseException;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
@@ -23,6 +25,8 @@ import java.util.List;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+
+import static com.google.android.gms.plus.PlusOneDummyView.TAG;
 
 /**
  * Created by Cuong Pham on 2/21/17.
@@ -59,22 +63,34 @@ public class TutorialFragment extends BaseFragment implements ValueEventListener
     @Override
     protected void initData() {
         mTutorials = new ArrayList<>();
-        dummyData();
+        getFireBaseData();
         mTutorialAdapter = new TutorialAdapter(mContext,mTutorials);
-        test();
-    }
-    public void test(){
-        String lg = ((MainActivity)mContext).getLanguage();
-        Log.d("MainActivity","current language: "+lg);
     }
 
-    public void testInsertData(){
+    public void getFireBaseData(){
+        FirebaseDatabase database = FirebaseDatabase.getInstance();
+        DatabaseReference myRef = database.getReference(getLanguage());
+        myRef.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                mTutorials.removeAll(mTutorials);
+                Log.d(TAG,"data: "+dataSnapshot);
+                for(DataSnapshot snapshot : dataSnapshot.child("tutorial").getChildren()){
+                    try {
+                        Tutorial obj = snapshot.getValue(Tutorial.class);
+                        mTutorials.add(obj);
+                   }catch(DatabaseException e){
+                        Log.d(TAG,"error: "+e);
+                    }
+                }
+                mTutorialAdapter.notifyDataSetChanged();
+            }
 
-    }
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
 
-    public void dummyData(){
-        mTutorials.add(new Tutorial("Hoc cach dan","noi dung","http://img11.deviantart.net/1c6f/i/2012/143/1/b/tiny_flower_2_by_scooterthedog-d50w5h8.jpg"));
-        mTutorials.add(new Tutorial("Hoc cach moc","noi dung","http://img11.deviantart.net/1c6f/i/2012/143/1/b/tiny_flower_2_by_scooterthedog-d50w5h8.jpg"));
+            }
+        });
     }
 
     @Override

@@ -30,7 +30,7 @@ public class TutorialAdapter extends RecyclerView.Adapter<TutorialAdapter.HowToD
     @Override
     public HowToDoViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View v = (View) LayoutInflater.from(parent.getContext())
-                .inflate(R.layout.howtodo_item, parent, false);
+                .inflate(R.layout.tutorial_item, parent, false);
         HowToDoViewHolder vh = new HowToDoViewHolder(v);
         return vh;
     }

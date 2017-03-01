@@ -6,4 +6,8 @@ package com.app.diy.utils;
 
 public class Constant {
     public static final String BLANK = "";
+
+    public static class FireBaseConstant{
+
+    }
 }
