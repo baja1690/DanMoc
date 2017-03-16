@@ -10,6 +10,7 @@ public class DiyItem {
     private String id;
     private String name;
     private String imgUrl;
+    private String content;
 
     public DiyItem() {
     }
@@ -18,6 +19,13 @@ public class DiyItem {
         this.id = id;
         this.name = name;
         this.imgUrl = imgUrl;
+    }
+
+    public DiyItem(String id, String name, String imgUrl, String content) {
+        this.id = id;
+        this.name = name;
+        this.imgUrl = imgUrl;
+        this.content = content;
     }
 
     public String getId() {

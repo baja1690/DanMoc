@@ -14,51 +14,77 @@ import com.bumptech.glide.Glide;
 
 import java.util.List;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
+
 /**
  * Created by Cuong Pham on 2/28/17.
  */
-
 public class TutorialAdapter extends RecyclerView.Adapter<TutorialAdapter.HowToDoViewHolder>{
-    private List<Tutorial> items;
+    private List<Tutorial> mItems;
     private Context mContext;
+    private OnTutorialItemClickListener mOnTutorialItemClickListener;
 
-    public TutorialAdapter(Context context, List<Tutorial> items) {
-        this.items = items;
+    public TutorialAdapter(Context context, List<Tutorial> items,OnTutorialItemClickListener listener) {
+        this.mItems = items;
         this.mContext = context;
+        this.mOnTutorialItemClickListener = listener;
     }
 
     @Override
     public HowToDoViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        View v = (View) LayoutInflater.from(parent.getContext())
+        View v = LayoutInflater.from(parent.getContext())
                 .inflate(R.layout.tutorial_item, parent, false);
         HowToDoViewHolder vh = new HowToDoViewHolder(v);
+
         return vh;
     }
 
     @Override
     public void onBindViewHolder(HowToDoViewHolder holder, int position) {
-        Tutorial item = items.get(position);
+        Tutorial item = mItems.get(position);
         if (holder!=null){
             Glide.with(mContext).load(item.getImgUrl()).into(holder.imgIcon);
             holder.txtTitle.setText(item.getTitle());
         }
+        holder.bind(item,mOnTutorialItemClickListener);
     }
 
     @Override
     public int getItemCount() {
-        return items.size();
+        return mItems!= null ? mItems.size():0;
     }
 
-    public static class HowToDoViewHolder extends RecyclerView.ViewHolder{
-        //@BindView(imageView)
+
+    public OnTutorialItemClickListener getOnTutorialItemClickListener() {
+        return mOnTutorialItemClickListener;
+    }
+
+    public void setOnTutorialItemClickListener(OnTutorialItemClickListener onTutorialItemClickListener) {
+        this.mOnTutorialItemClickListener = onTutorialItemClickListener;
+    }
+
+    public static class HowToDoViewHolder extends RecyclerView.ViewHolder {
+        @BindView(R.id.imgIcon)
         ImageView imgIcon;
-        //@BindView(R.id.txtTitle)
+        @BindView(R.id.txtTitle)
         TextView txtTitle;
+
         public HowToDoViewHolder(View itemView) {
             super(itemView);
-           // ButterKnife.bind(this,itemView);
-            imgIcon = (ImageView) itemView.findViewById(R.id.imgIcon);
-            txtTitle = (TextView) itemView.findViewById(R.id.txtTitle);
+            ButterKnife.bind(this,itemView);
         }
+
+        public void bind(final Tutorial item,final OnTutorialItemClickListener listener){
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    listener.onItemClicked(item);
+                }
+            });
+        }
+    }
+    public interface OnTutorialItemClickListener{
+        void onItemClicked(Tutorial tutorial);
     }
 }

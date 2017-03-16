@@ -1,10 +1,12 @@
 package com.app.diy.base;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 
+import com.app.diy.activities.WebActivity;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
@@ -28,5 +30,10 @@ public abstract class BaseFragment extends Fragment {
 
     public String getLanguage(){
         return ((BaseActivity)mContext).getLanguage();
+    }
+
+    public void goToWebView(){
+        Intent intent = WebActivity.createIntent(mContext);
+        startActivity(intent);
     }
 }

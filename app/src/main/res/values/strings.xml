@@ -11,4 +11,6 @@
     <string name="menu_saved_items">Saved items</string>
     <string name="menu_settings">Settings</string>
     <string name="screen_how_to_do">How To Do</string>
+    <string name="retry">Retry</string>
+    <string name="no_connection">No connection</string>
 </resources>

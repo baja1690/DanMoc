@@ -10,6 +10,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.app.diy.R;
+import com.app.diy.activities.MainActivity;
 import com.app.diy.base.BaseFragment;
 import com.app.diy.models.Tutorial;
 import com.app.diy.views.adapters.TutorialAdapter;
@@ -32,7 +33,7 @@ import static com.google.android.gms.plus.PlusOneDummyView.TAG;
  * Created by Cuong Pham on 2/21/17.
  */
 
-public class TutorialFragment extends BaseFragment implements ValueEventListener{
+public class TutorialFragment extends BaseFragment implements ValueEventListener, TutorialAdapter.OnTutorialItemClickListener {
     @BindView(R.id.rcViewTutorial)
     RecyclerView mRcListTutorials;
     private TutorialAdapter mTutorialAdapter;
@@ -64,7 +65,7 @@ public class TutorialFragment extends BaseFragment implements ValueEventListener
     protected void initData() {
         mTutorials = new ArrayList<>();
         getFireBaseData();
-        mTutorialAdapter = new TutorialAdapter(mContext,mTutorials);
+        mTutorialAdapter = new TutorialAdapter(mContext,mTutorials,this);
     }
 
     public void getFireBaseData(){
@@ -102,5 +103,12 @@ public class TutorialFragment extends BaseFragment implements ValueEventListener
     @Override
     public void onCancelled(DatabaseError databaseError) {
         Log.d(TutorialFragment.class.getSimpleName(),"error");
+    }
+
+    @Override
+    public void onItemClicked(Tutorial tutorial) {
+        if(mContext!=null){
+            ((MainActivity)mContext).openWebActivity();
+        }
     }
 }
