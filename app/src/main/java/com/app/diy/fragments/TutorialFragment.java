@@ -74,7 +74,7 @@ public class TutorialFragment extends BaseFragment implements ValueEventListener
         myRef.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
-                mTutorials.removeAll(mTutorials);
+                mTutorials.clear();
                 Log.d(TAG,"data: "+dataSnapshot);
                 for(DataSnapshot snapshot : dataSnapshot.child("tutorial").getChildren()){
                     try {

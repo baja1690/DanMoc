@@ -30,7 +30,7 @@ public class BaseActivity extends AppCompatActivity {
         init();
     }
     private void init(){
-        mProgress = new SimpleLoadingDialog(mContext);
+        mProgress = new SimpleLoadingDialog(this);
     }
     public void setLanguage(){
         if(mSharedPreference == null){

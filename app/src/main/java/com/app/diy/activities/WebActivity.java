@@ -83,7 +83,7 @@ public class WebActivity extends BaseActivity {
             }
         });
 
-        //mWebView.setWebViewClient(new DiyWebClient());
+        mWebView.setWebViewClient(new DiyWebClient());
     }
 
     class DiyWebClient extends WebViewClient{

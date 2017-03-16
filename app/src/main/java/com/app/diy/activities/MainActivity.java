@@ -62,6 +62,11 @@ public class MainActivity extends BaseActivity
         //testFireBase();
     }
 
+    public void init(){
+        TutorialFragment fragment = new TutorialFragment();
+        ActivityUtils.addFragmentToActivity(getSupportFragmentManager(), fragment,R.id.flContent);
+    }
+
     public void testFireBase(){
         FirebaseDatabase database = FirebaseDatabase.getInstance();
         DatabaseReference myRef = database.getReference("message");
