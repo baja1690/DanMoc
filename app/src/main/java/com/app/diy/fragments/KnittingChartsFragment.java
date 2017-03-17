@@ -13,13 +13,13 @@ import com.app.diy.R;
 import com.app.diy.base.BaseFragment;
 import com.app.diy.models.DiyCategory;
 import com.app.diy.models.DiyItem;
-import com.app.diy.models.Tutorial;
 import com.app.diy.views.adapters.KnittingAdapter;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseException;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
@@ -33,9 +33,7 @@ import butterknife.ButterKnife;
  */
 
 public class KnittingChartsFragment extends BaseFragment {
-    public static final String TAG =
-
-            ''
+    public static final String TAG = KnittingChartsFragment.class.getSimpleName();
     private List<DiyCategory> mDiyCategories;
     private KnittingAdapter mKnittingAdapter;
     @BindView(R.id.rcKnittingChart)
@@ -44,6 +42,7 @@ public class KnittingChartsFragment extends BaseFragment {
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setDummyData();
+        getFireBaseData();
     }
 
     @Nullable
@@ -94,15 +93,19 @@ public class KnittingChartsFragment extends BaseFragment {
     public void getFireBaseData(){
         FirebaseDatabase database = FirebaseDatabase.getInstance();
         DatabaseReference myRef = database.getReference(getLanguage());
+        String url = "chartmoc"+"itemid";
+        Query q = myRef.child("chartmoc").equalTo("chartmoc");
         myRef.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
                 mDiyCategories.clear();
                 Log.d(TAG,"data: "+dataSnapshot);
-                for(DataSnapshot snapshot : dataSnapshot.child("tutorial").getChildren()){
+                for(DataSnapshot snapshot : dataSnapshot.child("chartmoc").getChildren()){
                     try {
-                        Tutorial obj = snapshot.getValue(Tutorial.class);
-                        mTutorials.add(obj);
+                        snapshot.getKey();
+                        DiyCategory obj = snapshot.getValue(DiyCategory.class);
+                        obj.resetListItems();
+                        mDiyCategories.add(obj);
                     }catch(DatabaseException e){
                         Log.d(TAG,"error: "+e);
                     }

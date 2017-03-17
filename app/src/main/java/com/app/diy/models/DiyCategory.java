@@ -2,7 +2,10 @@ package com.app.diy.models;
 
 import com.google.firebase.database.IgnoreExtraProperties;
 
+import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
+import java.util.Objects;
 
 /**
  * Created by uong Pham on 3/16/17.
@@ -11,12 +14,16 @@ import java.util.List;
 public class DiyCategory {
     private int id;
     private String name;
-    private List<DiyItem> items;
+    private List<DiyItem> itemsss;
+    private Map<String,Objects> items;
+
+    public DiyCategory() {
+    }
 
     public DiyCategory(int id, String name, List<DiyItem> items) {
         this.id = id;
         this.name = name;
-        this.items = items;
+        this.itemsss = items;
     }
 
     public int getId() {
@@ -35,11 +42,23 @@ public class DiyCategory {
         this.name = name;
     }
 
-    public List<DiyItem> getItems() {
-        return items;
+    public List<DiyItem> getItemsss() {
+        return itemsss;
+    }
+    public void resetListItems(){
+        if(items !=null){
+            if(null==itemsss){
+                itemsss.clear();
+            }
+            List<Map.Entry> entryList = new ArrayList<Map.Entry>(items.entrySet());
+
+            for (Map.Entry s : entryList) {
+                itemsss.add((DiyItem) s);
+            }
+        }
     }
 
-    public void setItems(List<DiyItem> items) {
-        this.items = items;
+    public void setItemsss(List<DiyItem> itemsss) {
+        this.itemsss = itemsss;
     }
 }

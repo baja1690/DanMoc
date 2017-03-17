@@ -51,7 +51,7 @@ public class KnittingAdapter extends RecyclerView.Adapter<KnittingAdapter.Knitti
                     ((MainActivity)mContext).openWebActivity();
                 }
             });
-            ItemsAdapter adapter = new ItemsAdapter(mContext, obj.getItems(), new ItemsAdapter.OnItemClickListener() {
+            ItemsAdapter adapter = new ItemsAdapter(mContext, obj.getItemsss(), new ItemsAdapter.OnItemClickListener() {
                 @Override
                 public void onItemClicked(DiyItem diyItem) {
                     ((MainActivity)mContext).openWebActivity();
