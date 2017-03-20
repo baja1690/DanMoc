@@ -9,7 +9,7 @@ import com.google.firebase.database.IgnoreExtraProperties;
 public class DiyItem {
     private String id;
     private String name;
-    private String imgUrl;
+    private String url;
     private String content;
 
     public DiyItem() {
@@ -18,13 +18,13 @@ public class DiyItem {
     public DiyItem(String id, String name, String imgUrl) {
         this.id = id;
         this.name = name;
-        this.imgUrl = imgUrl;
+        this.url = imgUrl;
     }
 
     public DiyItem(String id, String name, String imgUrl, String content) {
         this.id = id;
         this.name = name;
-        this.imgUrl = imgUrl;
+        this.url = imgUrl;
         this.content = content;
     }
 
@@ -44,11 +44,11 @@ public class DiyItem {
         this.name = name;
     }
 
-    public String getImgUrl() {
-        return imgUrl;
+    public String getUrl() {
+        return url;
     }
 
-    public void setImgUrl(String imgUrl) {
-        this.imgUrl = imgUrl;
+    public void setUrl(String url) {
+        this.url = url;
     }
 }

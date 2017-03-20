@@ -9,7 +9,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.app.diy.R;
-import com.app.diy.models.DiyItem;
+import com.app.diy.models.test.ChartItem;
 import com.bumptech.glide.Glide;
 
 import java.util.List;
@@ -22,11 +22,11 @@ import butterknife.ButterKnife;
  */
 
 public class ItemsAdapter extends RecyclerView.Adapter<ItemsAdapter.ItemViewHolder> {
-    private List<DiyItem> mItems;
+    private List<ChartItem> mItems;
     private OnItemClickListener listener;
     private Context mContext;
 
-    public ItemsAdapter(Context mContext, List<DiyItem> mItems, OnItemClickListener listener) {
+    public ItemsAdapter(Context mContext, List<ChartItem> mItems, OnItemClickListener listener) {
         this.mItems = mItems;
         this.listener = listener;
         this.mContext = mContext;
@@ -42,10 +42,10 @@ public class ItemsAdapter extends RecyclerView.Adapter<ItemsAdapter.ItemViewHold
 
     @Override
     public void onBindViewHolder(ItemViewHolder holder, int position) {
-        DiyItem item = mItems.get(position);
+        ChartItem item = mItems.get(position);
         if(null!=holder){
-            holder.title.setText(item.getName());
-            Glide.with(mContext).load(item.getImgUrl()).into(holder.imageView);
+            holder.title.setText(item.getTitle());
+            Glide.with(mContext).load(item.getUrl()).into(holder.imageView);
             holder.bind(item,listener);
         }
     }
@@ -65,7 +65,7 @@ public class ItemsAdapter extends RecyclerView.Adapter<ItemsAdapter.ItemViewHold
             super(itemView);
             ButterKnife.bind(this,itemView);
         }
-        public void bind(final DiyItem item, final OnItemClickListener listener){
+        public void bind(final ChartItem item, final OnItemClickListener listener){
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
@@ -76,6 +76,6 @@ public class ItemsAdapter extends RecyclerView.Adapter<ItemsAdapter.ItemViewHold
     }
 
     public interface OnItemClickListener {
-        void onItemClicked(DiyItem diyItem);
+        void onItemClicked(ChartItem diyItem);
     }
 }

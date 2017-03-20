@@ -170,4 +170,7 @@ public class MainActivity extends BaseActivity
         Intent intent = WebActivity.createIntent(mContext);
         startActivity(intent);
     }
+    public void openWebActivity(String content){
+        WebActivity.openWebActivity(mContext,content);
+    }
 }

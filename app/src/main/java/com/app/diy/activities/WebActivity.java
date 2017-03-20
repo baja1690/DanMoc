@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.text.TextUtils;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -29,10 +30,18 @@ public class WebActivity extends BaseActivity {
     @BindView(R.id.rootView)
     LinearLayout rootView;
     private ObservableWebView mWebView;
+    private String mContent;
 
     public static Intent createIntent(Context context) {
         Intent intent = new Intent(context, WebActivity.class);
         return intent;
+    }
+
+    public static void openWebActivity(Context context,String content){
+        Intent intent = new Intent(context, WebActivity.class);
+        intent.putExtra("CONTENT",content);
+        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        context.startActivity(intent);
     }
 
     @Override
@@ -43,6 +52,7 @@ public class WebActivity extends BaseActivity {
 
         //setSupportActionBar(mToolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        mContent = getIntent().getStringExtra("CONTENT");
         init();
     }
 
@@ -74,8 +84,11 @@ public class WebActivity extends BaseActivity {
     public void init(){
         mWebView = new ObservableWebView(mContext);
         rootView.addView(mWebView);
-
-        mWebView.loadUrl("https://www.lamsao.com/huong-dan-moc-len-co-ban-cho-nguoi-moi-chua-biet-gi-p214a108474.html");
+        if (TextUtils.isEmpty(mContent)) {
+            mWebView.loadUrl("https://www.lamsao.com/huong-dan-moc-len-co-ban-cho-nguoi-moi-chua-biet-gi-p214a108474.html");
+        }else {
+            mWebView.loadData(mContent,"text/html; charset=utf-8", "utf-8");
+        }
         //Log.d("TAG","(yOld,y): "+oldScrollY+","+scrollY);
         mWebView.setOnScrollChangeListener(new ObservableWebView.OnScrollChangeListener() {
             @Override
@@ -86,23 +99,23 @@ public class WebActivity extends BaseActivity {
         mWebView.setWebViewClient(new DiyWebClient());
     }
 
-    class DiyWebClient extends WebViewClient{
+    static class DiyWebClient extends WebViewClient{
         @Override
         public void onPageStarted(WebView view, String url, Bitmap favicon) {
             super.onPageStarted(view, url, favicon);
-            mProgress.show();
+            //mProgress.show();
         }
 
         @Override
         public void onPageFinished(WebView view, String url) {
             super.onPageFinished(view, url);
-            mProgress.hide();
+            //mProgress.hide();
         }
 
         @Override
         public void onReceivedError(WebView view, WebResourceRequest request, WebResourceError error) {
             super.onReceivedError(view, request, error);
-            mProgress.hide();
+            //mProgress.hide();
         }
     }
 }
