@@ -97,28 +97,6 @@ public class KnittingAdapter extends RecyclerView.Adapter<KnittingAdapter.Knitti
         });
     }
 
-    public void getFireBaseData(String chartCtgName, final ItemsAdapter adapter){
-        mItems = new ArrayList<>();
-        FirebaseDatabase database = FirebaseDatabase.getInstance();
-        DatabaseReference myRef = database.getReference("/chartmoc/category/"+chartCtgName);
-        myRef.addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(DataSnapshot dataSnapshot) {
-                mItems.clear();
-                for(DataSnapshot data : dataSnapshot.getChildren()){
-                    ChartItem item = data.getValue(ChartItem.class);
-                    mItems.add(item);
-                }
-                adapter.notifyDataSetChanged();
-            }
-
-            @Override
-            public void onCancelled(DatabaseError databaseError) {
-
-            }
-        });
-    }
-
     @Override
     public int getItemCount() {
         return (null != mDiyCategories ? mDiyCategories.size() : 0);

@@ -39,7 +39,6 @@ public class KnittingChartsFragment extends BaseFragment {
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setDummyData();
         getFireBaseData();
     }
 
@@ -65,27 +64,6 @@ public class KnittingChartsFragment extends BaseFragment {
     protected void initData() {
         mCategories = new ArrayList<>();
         mKnittingAdapter = new KnittingAdapter(mContext, mCategories);
-    }
-
-    public void setDummyData(){
-        /* mDiyCategories = new ArrayList<>();
-        List<ChartItem> items = new ArrayList<>();
-        ChartItem item = new ChartItem("1", "ao somi", "https://s-media-cache-ak0.pinimg.com/736x/50/9e/d7/509ed7c3954019b24cb2745dd65f8faa.jpg", "content");
-        items.add(item);
-        item = new ChartItem("1", "ao somi", "https://s-media-cache-ak0.pinimg.com/736x/50/9e/d7/509ed7c3954019b24cb2745dd65f8faa.jpg", "content");
-        items.add(item);
-        item = new ChartItem("2", "ao am", "https://s-media-cache-ak0.pinimg.com/736x/50/9e/d7/509ed7c3954019b24cb2745dd65f8faa.jpg", "content");
-        items.add(item);
-        item = new ChartItem("3", "ao am co co", "https://s-media-cache-ak0.pinimg.com/736x/50/9e/d7/509ed7c3954019b24cb2745dd65f8faa.jpg", "content");
-        items.add(item);
-        item = new ChartItem("4", "ao co trai tim", "https://s-media-cache-ak0.pinimg.com/736x/50/9e/d7/509ed7c3954019b24cb2745dd65f8faa.jpg", "content");
-        items.add(item);
-        DiyCategory v = new DiyCategory(1,"Chart Moc Ao",items);
-        mDiyCategories.add(v);
-        v = new DiyCategory(2,"Chart Moc Thu",items);
-        mDiyCategories.add(v);
-        v = new DiyCategory(3,"Chart Moc khan",items);
-        mDiyCategories.add(v);*/
     }
 
 

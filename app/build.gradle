@@ -41,5 +41,8 @@ dependencies {
     compile 'com.google.android.gms:play-services:10.2.0'
     compile 'com.google.firebase:firebase-database:10.2.0'
     compile 'com.google.firebase:firebase-core:10.2.0'
+    //realm
+    //compile 'io.realm:realm-android:3.0.0'
 }
 apply plugin: 'com.google.gms.google-services'
+apply plugin: 'realm-android'

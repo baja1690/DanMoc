@@ -108,7 +108,8 @@ public class TutorialFragment extends BaseFragment implements ValueEventListener
     @Override
     public void onItemClicked(Tutorial tutorial) {
         if(mContext!=null){
-            ((MainActivity)mContext).openWebActivity();
+            ((MainActivity)mContext).openWebActivity(tutorial.getContent());
         }
     }
 }
+

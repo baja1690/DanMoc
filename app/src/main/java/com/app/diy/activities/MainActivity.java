@@ -19,7 +19,8 @@ import com.app.diy.fragments.KnittingChartsFragment;
 import com.app.diy.fragments.SavedListFragment;
 import com.app.diy.fragments.SettingFragment;
 import com.app.diy.fragments.TutorialFragment;
-import com.app.diy.network.FireBaseDb;
+import com.app.diy.repository.local.RealmDb;
+import com.app.diy.repository.network.FireBaseDb;
 import com.app.diy.utils.ActivityUtils;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -37,6 +38,7 @@ public class MainActivity extends BaseActivity
 
     private static final String TAG = MainActivity.class.getSimpleName();
     private FireBaseDb mFireBaseDb;
+    private RealmDb mRealmDb;
     @BindView(R.id.toolbar)
     Toolbar mToolbar;
 
@@ -60,6 +62,8 @@ public class MainActivity extends BaseActivity
        // mFireBaseDb.writeNewItem("abc","amigur","https://google.com");
         mFireBaseDb.updateItems();
         //testFireBase();
+        mRealmDb = RealmDb.getInstance();
+
     }
 
     public void init(){

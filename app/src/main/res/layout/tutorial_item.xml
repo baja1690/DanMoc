@@ -9,6 +9,9 @@
     android:layout_height="150dp"
     card_view:cardCornerRadius="4dp"
     android:clickable="true">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -28,5 +31,14 @@
         android:layout_gravity="center_vertical"
         android:text="Learn to knit"/>
     </LinearLayout>
+        <ImageButton
+            android:id="@+id/btnSave"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:paddingTop="8dp"
+            android:paddingRight="8dp"
+            android:background="@drawable/ic_menu_share"
+            android:layout_gravity="top|right"/>
+    </FrameLayout>
 </android.support.v7.widget.CardView>
 

@@ -6,8 +6,12 @@ package com.app.diy.models;
 
 import com.google.firebase.database.IgnoreExtraProperties;
 
+import io.realm.RealmModel;
+import io.realm.annotations.RealmClass;
+
+@RealmClass
 @IgnoreExtraProperties
-public class Tutorial {
+public class Tutorial implements RealmModel {
     private String id;
     private String title;
     private String imgUrl;
