@@ -27,6 +27,5 @@ public class SavedItemAdapter {
             super(itemView);
             ButterKnife.bind(this,itemView);
         }
-
     }
 }

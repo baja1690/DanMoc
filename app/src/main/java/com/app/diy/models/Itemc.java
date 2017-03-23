@@ -1,13 +1,13 @@
 package com.app.diy.models;
 
-import com.google.firebase.database.IgnoreExtraProperties;
+import io.realm.RealmObject;
+import io.realm.annotations.RealmClass;
 
 /**
  * Created by Cuong Pham on 3/17/17.
  */
-
-@IgnoreExtraProperties
-public class Itemc {
+@RealmClass
+public class Itemc extends RealmObject{
     private String id;
     private String title;
     private String url;
